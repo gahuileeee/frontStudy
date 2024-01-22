@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.입력양식태그</title>
+</head>
+<body>
+    <h3>입력 양식 태그</h3>
+    <h4>기본 입력</h4>
+    <form action="https://google.com">
+        <!-- label로 뭘 입력해야하는지 알려줌 -->
+    <label>아이디   <input type="text" name="uid"></label><br>
+     <label>비밀번호   <input type="password" name="pass"></label><br>
+    <h4>기타입력</h4>
+    <h5>취미를 고르세요.</h5>
+    <!--이렇게 라벨로 감싸면 글자를 눌러도 checkbox가 눌러짐-->
+    <label> <input type="checkbox"name="hobby" value="1">등산</label> 
+    <label><input type="checkbox" name="hobby" value="2">여행 </label>
+    <label><input type="checkbox" name="hobby" value="3">영화 </label>
+    <label><input type="checkbox" name="hobby" value="4">게임</label>
+    <label><input type="checkbox" name="hobby" value="5">운동 </label>
+    <h5>성별을 선택하세요.</h5>
+        <input type="radio" name="gender" value="M">남자
+        <input type="radio" name="gender" value="F">여자
+    <h5>지역을 선택하세요</h5>
+        <select name="addr">
+        <option>서울</option>
+        <option>대전</option>
+        <option>대구</option>
+        <option>부산</option>
+        <option>광주</option>
+    </select>
+    <h5>날짜를 선택하세요</h5>
+        <input type="date" name="date">
+    <h5>자기소개를 하세요</h5>
+    <textarea name="myself" cols ="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="제출">
+</form>
+</body>
+</html>
