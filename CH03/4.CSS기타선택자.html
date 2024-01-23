@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.CSS 기타선택자</title>
+</head>
+<style>
+    /*속성 선택자*/
+    input[value]{
+        color: white;
+        background-color: black;
+    }
+    input[name=uid] {color: red;}
+    input[name=pass] {color: blue;}
+    /*반응 선택자*/
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(132, 66, 255);
+        
+    }
+    /*active는 마우스로 click, hover는 마우스를 올리는 것*/
+    .box1:active{
+        background-color: lightskyblue;
+    }
+    .box2:hover{
+        background-color: lightseagreen;
+    }
+    /*가상요소 선택자 ::*/
+    /*2,000 뒤에 어떠한 가상의 공간을 가르키는 것
+    이거를 모르면 원,원,원 다 추가해야 해서 코드가 더러워짐*/
+    #won > li::after{
+        content: '원';
+    }
+    #dollar >li::before{
+        content: '$';
+    }
+</style>
+<body>
+       <h2>기타선택자</h2>
+       <h4>속성 선택자</h4>
+        <input type="text" name="uid">
+        <input type="text" name="pass">
+        <input type="submit" value="로그인">
+
+       <h4>반응 선택자</h4> 
+       <div class="box box1">box1</div>
+       <div class="box box2">box2</div>
+
+       <h4>가상요소 선택자</h4> 
+        <ul id="won">
+            <li>2,000</li>
+            <li>2,500</li>
+            <li>3,000</li>
+        </ul>
+        <ul id="dollar">
+            <li>2,000</li>
+            <li>2,500</li>
+            <li>3,000</li>
+        </ul>
+</body>
+</html>

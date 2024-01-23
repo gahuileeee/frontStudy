@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.CSS 구조선택자</title>
+    <style>
+        /*구조 선택자 음.. 서울만 선택하고 싶은데 어떻게 할까?*/
+        .city > li:first-child {color: crimson;}
+        .city > li:nth-child(2) {color: rgb(248, 117, 41);}
+        .city > li:nth-child(4) {color: rgb(84, 216, 128);}
+        /*부모가 기준임*/
+        .city > em:nth-child(6) {color: rgb(149, 211, 33);}
+        .city > em:nth-of-type(2){color: rgb(170, 113, 26);}
+        .city > em:last-child {color: darkseagreen;}
+        
+        body > ul:nth-child(3) > li:first-child{color: blueviolet;}
+        ul:nth-child(3) > li:nth-child(2){color: chocolate;}
+        ul:nth-of-type(2) > li:last-child{color: darkkhaki;}
+    </style>
+</head>
+<body>
+    <h3>3.CSS 구조선택자</h3>
+    <ul class="city">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+        <em>인천</em>
+        <em>울산</em>
+        <em>세종</em>
+    </ul>
+    <ul>
+        <li>한국</li>
+        <li>미국</li>
+        <li>중국</li>
+        <li>일본</li>
+        <li>호주</li>
+    </ul>
+</body>
+</html>
