@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+input, textarea {outline: none;}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+header > div {
+    width: 1000px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header>div:nth-child(1){
+    height: 70%;
+    display:flex;
+    border-bottom: 2px solid rgb(185, 4, 4);
+}
+header>div:nth-child(1)>img{
+    margin: 10px 0px;
+}
+header>div>div{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 300px;
+    width: 700px;
+  
+}
+header>div>div>a{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 45px;
+    color: rgb(59, 59, 59);
+}
+header>div:nth-child(2){
+    display: flex;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(229, 229, 230);
+}
+
+
+/* 메인 */
+main {
+    width: 1000px;
+    height: auto;
+    margin: 5px auto;
+}
+
+main > div {
+    overflow: hidden;
+}
+.banner{
+    background-image: url("../images/main_banner_bg.jpg");
+ }
+ .banner>img{
+    margin: 100px 130px;
+ }
+ .call{
+    background-color: #f2f2f2;
+    position: relative;
+ }
+ .call >img:nth-child(1){
+    position: absolute;
+    top: 20px;
+    left: 20px;
+ }
+ .call >img:nth-child(3){
+    position: absolute;
+    top: 70px;
+    left: 20px;
+ }
+ .call >img:nth-child(4){
+    position: absolute;
+    right: 20px;
+ }
+ .call >h3{
+    position: absolute;
+    top:50px;
+    left: 20px;
+ }
+
+ .qna>p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.qna>table {
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.qna>table td:nth-child(2){
+display: block;
+width: 285px;
+white-space: nowrap;
+overflow: hidden;
+ text-overflow: ellipsis;
+line-height: 18px;
+margin-right: 10px;
+
+}
+
+.qna>table td:nth-child(2)>a {
+    color: #646161;
+}
+.qna>table td:nth-child(2)>a:hover{
+    text-decoration: underline;
+}
+aside>div:nth-child(1)>p{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+aside>div:nth-child(1)>table td:nth-child(2){
+    display: block;
+    width: 75%;
+  white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ line-height: 18px;
+}
+
+aside>div:nth-child(1)>table{
+    margin-left: 10px;
+}
+
+aside>div> p{
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+aside>div:nth-child(2)>a>img{
+    margin-top: 10px;
+    margin-left: 5px;
+  
+}
+aside>div:nth-child(2)>a:nth-of-type(1)>img{
+    margin-top: 5px;
+    margin-left: 5px;
+  
+}
+aside>div:nth-of-type(2)>a{
+    display: block;
+    height: 35px;
+    width: 90%;
+    background-color: #f2f2f2;
+    margin-bottom: 7px;
+    margin-left: 8px;
+    border: 1px solid #dddcdc;
+}
+.medo>div{
+    width: 100%;
+    height: auto;
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    margin: 10px 0;
+
+}
+.medo>div:nth-child(3){
+    height: 165px;
+    background-image: url("../images/aside_banner_bg.jpg");
+}
+.medo>div:nth-child(3)>p{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 15px;
+}
+.medo>div:nth-child(3)>a>img{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+main > div > div {            
+    border: 1px solid #dad9d9;
+    box-sizing: border-box;
+}
+main > div > .banner {
+    float: left;
+    width: 588px;
+    height: 320px;
+}
+main > div > .call {
+    float: right;
+    width: 406px;
+    height: 133px;
+}
+main > div > .qna {
+    float: right;
+    width: 406px;
+    height: 182px;
+    margin-top: 5px;
+}
+
+main > section {            
+    overflow: hidden;
+}
+main > section > aside {
+    float: left;
+    width: 195px;
+    height: 760px;
+    margin-top: 5px;
+    border: 1px solid  #dad9d9;
+    box-sizing: border-box;
+}
+main > section > article {
+    float: right;
+    width: 800px;
+    height: 250px;
+    margin-top: 5px;
+    border: 1px solid #dad9d9;
+    box-sizing: border-box;
+}
+
+header>div:nth-of-type(2)>div{
+position: relative;
+width: 1000px;
+height: 20px;
+margin: 0 auto;
+
+}
+
+header>div:nth-of-type(2)>div>a>img{
+position: absolute;
+ left: 0;
+bottom: 0px;
+height: 95%;
+}
+header>div:nth-of-type(2)>div>p{
+position: absolute;
+left: 80px;
+}
+header>div:nth-of-type(2)>div>a>p{
+position: absolute;
+top:2px;
+left:90px
+}
+header>div:nth-of-type(2)>div>a>p:hover{
+text-decoration: underline;
+}
+article{
+    position: relative;
+}
+article>a>img{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
+article>p{
+    display: flex;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+article>div{
+display: flex;
+width: 100%;
+height: 70%;
+margin-left: 10px;
+}
+article>div>div>p{
+width: 150px;
+}
+article>div>div>p:hover{
+text-decoration: underline;
+}
+article>div>div>div{
+width: 150px;
+height: 100px;
+background-position: center;
+background-size: cover;
+background-image: url("../images/thumbnail_sample1.jpg");
+margin-right:5px;
+}
+article>div>div:nth-child(2)>div{
+background-image: url("../images/thumbnail_sample2.jpg");
+}
+article>div>div:nth-child(3)>div{
+background-image: url("../images/thumbnail_sample3.jpg");
+}
+article>div>div:nth-child(4)>div{
+background-image: url("../images/thumbnail_sample4.jpg");
+}
+article>div>div:nth-child(5)>div{
+background-image: url("../images/thumbnail_sample5.jpg");
+}
+article>div>div:nth-child(6)>div{
+background-image: url("../images/thumbnail_sample6.jpg");
+}
+
+/* 푸터 */
+footer {
+    width: 1000px;
+    height: 130px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+footer{
+    border: 1px solid #f2f2f2;
+    border-top: 2px solid #c2c2c2;
+}
+footer>img{
+margin-top: 10px;
+margin-left: 10px;
+}
+footer>p{
+margin-top: 5px;
+margin-left: 10px;
+color: #747272;
+}
+#font{
+font-weight: bold;
+margin-top: 10px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.위치 속성</title>
+
+    <!--
+        position:static
+        - 상대위치좌표
+        - 모든 태그의 기본값
+        - 이동속성 (left, right, top, bottom) 안됨
+
+        positon:relative
+        - 상대위치좌표
+        - absolute 위치를 갖는 자식 태그요소의 배치를 위한 관계설정
+        - 이동속성(left, right, top, bottom) 적용
+
+        position:absolute
+        - 절대위치좌표
+        - 이동속성(left, right, top, bottom) 적용
+        - 부모태그에 relative 설정으로 배치
+
+        position: fixed
+        - 절대위치좌표
+        - 이동속성(left, right, top, bottom) 적용
+        - 브라우저 화면 고정 (스크롤해도 계속 그 자리에)
+    -->
+<style>
+    section {
+        width: 400px;
+        height: 200px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    div:nth-child(1){
+        background: #ff0000;
+    }
+    div:nth-child(2){
+        background: #0000ff;
+    }
+    div:nth-child(3){
+        background: #00ff00;
+    }
+
+    /*position:static*/
+    .s1 > div:nth-child(1){
+        position: static; /*기본*/
+        left: 10px;
+        top:10px; /*꼼짝도 하지 않음 독한애임*/
+     }
+
+    /*position:relative*/ /*사실 absolute 안에서 relative가 사용됨*/
+    .s2 > div:nth-child(1){
+        position:relative;
+        left:100px;
+        top:10px;
+    }
+    .s2 > div:nth-child(2){
+        position: relative;
+        right: 10px;
+        bottom: 10px; 
+    }
+    .s2 > div:nth-child(3){
+        position: relative;
+        left: 50px;
+        bottom: -50px;
+    }
+
+    /*position:absolute*/
+     /*x,y의 절대 좌표를 가지고 이동하는 친구 그래서 section밖을 나가기도 함*/
+     /*지정된 곳 안에서만 position되게 하려면 부모한테 posiation: relative를 넣어줌*/
+     .s3{
+        position: relative;
+     }
+    .s3 > div:nth-child(1){
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .s3 > div:nth-child(2){
+        position: absolute;
+        left: 150px;
+        top: 70px;
+    }
+    .s3 > div:nth-child(3){
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    /*position:fixed*/ /*스크롤해도 브라우저에 fix되어있음*/
+    .s4 > div:nth-child(1){
+        position: fixed;
+        right: 10ox;
+        top:10px;
+    }
+    .s4 > div:nth-child(2){
+        position: fixed;
+        right: 50%;
+        top: 50%;
+    }
+    .s4 > div:nth-child(3){
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <h3>5.위치 속성</h3>
+    <h4>position:static</h4>
+    <section class="s1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <h4>position:relative</h4>
+    <section class="s2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    
+    <h4>position:absolute</h4>
+    <section class="s3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    
+    <h4>position:fixed</h4>
+    <section class="s4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    
+</body>
+</html>

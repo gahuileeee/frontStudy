@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.가시속성</title>
+    <style>
+        span {background-color: orange; }
+        div > div{background-color: green;}
+        
+        .box1 > span:nth-child(1) {display: none;} /*스판 1이 사라짐 공간까지*/
+        .box1 > span:nth-child(2) {visibility: hidden;} /*스판 2이 안보이지만 공간은 있음*/
+        .box1 > span:nth-child(3) {opacity: 0.5;} /*투명도 투명(0-1)불투명*/
+        
+        .box2 > span:nth-child(2){display: block;} /*block이 되었음(span->div)*/
+        .box3 > div{display: inline;} /*inline 되었음 (div->span)*/
+        .box4 > div {
+            display: inline-block; 
+            width: 100px;
+            height: 100px;
+        } /*inline-block이 되었음 (가로 배치지만 size 지정 가능*/
+    </style>
+</head>
+<body>
+    <h3>1.가시속성</h3>
+ 
+    <h4>display: none</h4>
+    <div class="box1">
+        <span>SPNA1</span>
+        <span>SPNA2</span>
+        <span>SPNA3</span>
+    </div>
+    <h4>display: block</h4>
+    <div class="box2">
+        <span>SPNA1</span>
+        <span>SPNA2</span>
+        <span>SPNA3</span>
+    </div>
+    <h4>display: inline</h4>
+    <div class="box3">
+        <span>SPNA1</span>
+        <div>DIV2</div>
+        <span>SPNA3</span>
+    </div>
+    <h4>display: inline-block</h4>
+    <div class="box4">
+        <span>SPNA1</span>
+        <div>DIV2</div>
+        <span>SPNA3</span>
+    </div>
+</body>
+</html>
