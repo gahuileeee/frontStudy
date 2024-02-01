@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;            
+    font: normal 12px "noto sans korean";
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+#wrapper {
+    width: 100%;
+    height: 100%;         
+    box-sizing: border-box;   
+}
+
+header {
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+}
+header > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+header > div:nth-child(1) {height: 44px;
+}
+header > div:nth-child(2) {height: 110px;}
+header > div:nth-child(3) {height: 46px;}
+header > div > * {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+main > section {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+main > section:nth-child(1) {height: 480px;}
+main > section:nth-child(2) {height: auto;}
+main > section:nth-child(3) {height: 620px;}
+main > section:nth-child(4) {height: 220px;}
+main > section:nth-child(5) {height: auto;}
+main > section:nth-child(6) {height: 220px;}
+main > section:nth-child(7) {height: auto;}
+
+
+main > section > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;            
+}
+
+main > .new {}
+main > .new > article {
+    height: 480px;            
+}
+main > .new > article > div {
+    float: left;
+    width: 345px;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+}
+
+main > .new > article > div:nth-child(1) {width: 434px; height: 100%;}
+main > .new > article > div:nth-child(2) {height: 50%;}
+main > .new > article > div:nth-child(3) {height: 50%;}
+main > .new > article > div:nth-child(4) {height: 50%;}
+main > .new > article > div:nth-child(5) {height: 50%;}
+
+main > .master {}
+main > .master > article {}
+main > .master > article > div {
+    float: left;
+    width: 25%;
+    height: 334px;
+    box-sizing: border-box;
+}
+
+main .gallary {            
+    overflow: hidden;
+}
+
+main .gallary > div {
+    float: left;
+    width: 25%;
+    height: 400px;       
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+footer > div {
+    width: 1126px;
+    height: 210px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+    /*헤더 1 (장바구니 부분)*/
+    header > div:nth-child(1) {
+        background-color: #e6e3e3;
+    }
+    section{
+        position: relative;
+    }
+   header>div> section>a:nth-child(2)>img{
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+    }
+    header>div:nth-child(3){
+        background-color: rgb(71, 71, 71);
+    }
+    header>div>nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(56, 55, 55);
+    }
+
+    header>div>nav>a{
+        display: block;
+        width: 180px;
+        height: auto;
+        text-align: center;
+    }
+    header>div>nav>a>p{
+        font-size: 16px;
+        color: rgb(206, 187, 164);
+        padding-top: 7px;
+    }
+    header>div>nav>a:hover{
+        background-color: green;
+    }
+    header>div>nav>a:hover>p {
+font-weight: bold;
+    color: white;
+    }
+
+    /*배너*/
+   .banner> article{
+        position: relative;
+    }
+    .banner> article>img:nth-child(1){
+
+    }
+    .banner> article>img:nth-child(2){
+        position: absolute;
+        top: 30px;
+    }
+    .banner> article>img:nth-child(3){
+        position: absolute;
+        top:130px
+    }
+    /*새상품*/
+    .new{
+        position: relative;
+    }
+    .new>p{
+        font-size: 17px;
+        position: absolute;
+        top:1px;
+        right: 50%;
+    }
+    #colorgreen{
+        font-size: 17px;
+        color: olivedrab;
+        font-weight: bold;
+    }
+    .new>article>div>p:nth-of-type(1){
+        position: absolute;
+        right: 40%;
+        bottom: 60%;
+        font-size: 13px;
+    }
+    .new>article>div>p:nth-of-type(2){
+        position: absolute;
+        right: 40%;
+        bottom: 50%;
+        font-weight: bold;
+        font-size: large;
+    }
+    .new>article>div:nth-child(1){
+        position: relative;
+        background-image: url(../images/main_new_img1.jpg);
+    }
+    .new>article>div:nth-child(1)>p:nth-of-type(1){
+        position: absolute;
+        font-size: 25px;
+        left: 50px;
+    }
+    #special{
+        position: absolute;
+        background-color: rgb(107, 110, 108);
+        font-size: 22px;
+        color: white;
+        left: 50px;
+        top: 105px;
+    }
+    .new>article>div>p:nth-of-type(3){
+        position: absolute;
+        font-size: large;
+        bottom: 20px;
+        right: 20px;
+        font-weight: bold;
+        color: orange;
+    }
+    .new>article>div:nth-child(3)>p:nth-of-type(3){
+        position: absolute;
+        font-size: large;
+        bottom: 20px;
+        left: 20px;
+        font-weight: bold;
+        color: orange;
+    }
+    .new>article>div:nth-child(4)>p:nth-of-type(3){
+        position: absolute;
+        font-size: large;
+        bottom: 20px;
+        left: 20px;
+        font-weight: bold;
+        color: orange;
+    }
+    .new>article>div:nth-child(5)>p:nth-of-type(3){
+        position: absolute;
+        font-size: large;
+        bottom: 20px;
+        left: 20px;
+        font-weight: bold;
+        color: orange;
+    }
+    .new>article>div:nth-child(2){
+        position: relative;
+        background-image: url("../images/main_new_img2.jpg");
+        background-repeat: no-repeat;
+        background-position: left 30px;
+        
+    }
+    .new>article>div:nth-child(3){
+        position: relative;
+        background-image: url(../images/main_new_img3.png);
+        background-repeat: no-repeat;
+        background-position: right 30px;
+        background-position: bottom 0px;
+    }
+    .new>article>div:nth-child(4){
+        position: relative;
+        background-image: url(../images/main_new_img4.jpg);
+        background-repeat: no-repeat;
+        background-position: right 30px;
+    }
+    .new>article>div:nth-child(5){
+        position: relative;
+        background-image: url(../images/main_new_img5.jpg);
+        background-repeat: no-repeat;
+        background-position: right 30px;
+    }
+    #podo{
+        position: absolute;
+        background-color: rgb(107, 110, 108);
+        left: 167px;
+        top: 105px;
+        font-size: 22px;
+        color: rgb(148, 192, 59);
+        font-weight: bold;
+    }
+         /*master*/
+         #master{
+            position: relative;
+        }
+        .master>p{
+            position: absolute;
+            font-size: 18px;
+            left: 43%;
+            top:2px
+        }
+        .master{
+            position: relative;
+          background-image: url("../images/main_master_bg.png");
+        
+        }
+        .master>article>div{
+            position: relative;
+        }
+        .master>article>div>div>p:nth-of-type(1){
+            position: absolute;
+            bottom: 35px;
+            left: 30px;
+            font-size: 10px;
+        }
+        .master>article>div>div>p:nth-of-type(2){
+            position: absolute;
+            font-size: 15px;
+            bottom: 10px;
+            left: 30px;
+        }
+        .master>article>div>div{
+            position: absolute;
+            width: 250px;
+            height: 280px;
+            right: 13px;
+            top: 12px;
+            background-color: white;
+        }
+        .master>article>div>div>div:nth-of-type(1){
+            position: absolute;
+            top:40px;
+            right: 25px;
+            width: 200px;
+            height: 170px;
+            background-image: url("../images/main_master_pic1.jpg");
+        }
+        .master>article>div:nth-of-type(2)>div>div{
+            position: absolute;
+            top:40px;
+            right: 25px;
+            width: 200px;
+            height: 170px;
+            background-image: url("../images/main_master_pic2.jpg");
+        }
+        .master>article>div:nth-of-type(3)>div>div{
+            position: absolute;
+            top:40px;
+            right: 25px;
+            width: 200px;
+            height: 170px;
+            background-image: url("../images/main_master_pic3.jpg");
+        }
+        .master>article>div:nth-of-type(4)>div>div{
+            position: absolute;
+            top:40px;
+            right: 25px;
+            width: 200px;
+            height: 170px;
+            background-image: url("../images/main_master_pic4.jpg");
+        }
+    
+        .organic>p{
+            position: absolute;
+            font-size: 18px;
+            left: 43%;
+            top:2px
+        }
+        .grain>p{
+            position: absolute;
+            font-size: 18px;
+            left: 43%;
+            top:2px
+        }
+        /*메인 베너*/
+        .organic_banner>div{
+            position: relative;
+            width: 100%;
+            height: 140px;
+            background-image: url(../images/main_organic_bg.png);
+            background-position: center;
+        }
+        .organic_banner>div>img{
+            position: absolute;
+            right: 200px;
+            width: 500px;
+            top:30px
+        }
+        .grain_banner >div{
+            position: relative;
+            width: 100%;
+            height: 140px;
+            background-image: url(../images/main_grain_bg.png);
+            background-position: center;
+        }
+        .grain_banner>div>img{
+            position: absolute;
+            right: 200px;
+            width: 500px;
+            top:30px
+        }
+        .gallary>div{
+            position: relative;
+        }
+        .gallary>div>a>div{
+            position: absolute;
+            width: 90%;
+            height: 350px;
+            top: 10px;
+            left: 10px;
+        }
+        .gallary>div>a>div:hover{
+            border: 1px solid #d6d4d4;
+        }
+        .gallary>div>a>div>div:nth-of-type(1){
+            width: 90%;
+            height: 250px;
+            position: absolute;
+            top: 15px;
+            right: 12px;
+            background-image: url(../images/main_organic_thum1.jpg);
+            background-size: cover;
+        }
+        .organic>article>div:nth-of-type(2)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum2.jpg);
+        }
+        .organic>article>div:nth-of-type(3)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum3.jpg);
+        }
+        .organic>article>div:nth-of-type(4)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum4.jpg);
+        }
+        .organic>article>div:nth-of-type(5)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum5.jpg);
+        }
+        .organic>article>div:nth-of-type(6)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum6.jpg);
+        }
+        .organic>article>div:nth-of-type(7)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum7.jpg);
+        }
+        .organic>article>div:nth-of-type(8)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_organic_thum8.jpg);
+        }
+        .gallary>div>a>div>div:nth-of-type(2){
+            position: absolute;
+            width: 90%;
+            height: 70px;
+            bottom: 5px;
+            right:12px ;
+        }
+        .gallary>div>a>div>div:nth-of-type(2)>p:nth-of-type(1){
+           font-size: 13px;
+            font-weight: bold;
+        }
+        .gallary>div>a>div>div:nth-of-type(2)>p:nth-of-type(2){
+            white-space: nowrap;
+        overflow: hidden;
+         text-overflow: ellipsis;
+        line-height: 18px;
+        }
+        .gallary>div>a>div>div:nth-of-type(2)>p:nth-of-type(3){
+            position: absolute;
+            right: 2px;
+            font-weight: bold;
+        }
+
+        .grain>article>div:nth-of-type(1)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum1.jpg);
+        }
+        .grain>article>div:nth-of-type(2)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum2.jpg);
+        }
+        .grain>article>div:nth-of-type(3)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum3.jpg);
+        }
+        .grain>article>div:nth-of-type(4)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum4.jpg);
+        }
+        .grain>article>div:nth-of-type(5)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum5.jpg);
+        }
+        .grain>article>div:nth-of-type(6)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum6.jpg);
+        }
+        .grain>article>div:nth-of-type(7)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum7.jpg);
+        }
+        .grain>article>div:nth-of-type(8)>a>div>div:nth-of-type(1){
+            background-image: url(../images/main_grain_thum8.jpg);
+        }
+        
+        footer{
+            background-color: #f2f2f2;
+        }
+        footer>div{
+            position: relative;
+        }
+        footer>div>img{
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        footer>div>p{
+            position: absolute;
+            top: 50px;
+            left: 240px;
+            font-size: 11px;
+            color: rgb(128, 126, 126);
+        }
